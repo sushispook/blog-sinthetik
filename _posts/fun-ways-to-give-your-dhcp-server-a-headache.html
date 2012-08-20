@@ -1,0 +1,16 @@
+title: Fun ways to give your DHCP server a headache
+date: 2010/03/22 08:17:32 -0700
+tags: [{"name":"DHCP","id":6219600},{"name":"Microsoft","id":6219597}]
+author: Professor Crabwise Stabbington
+alias: /fun-ways-to-give-your-dhcp-server-a-headache
+
+        <p>Dear Internet: I learned something today&#8230;</p> <p></p> <p>In the course of testing something, a host file was edited on a server. Unfortunately, that server was also a DHCP server &#8211; and if you ever edit the host file on a DHCP server with an entry that points back to itself, you will suddenly find yourself totally unable to manage said DHCP server: </p> <p></p> <p><div class='p_embed p_image_embed'>
+<a href="/media/getfile/files.posterous.com/sushispook/UtuzrFi1mh7WyjUxv9j96rXbN9InH656aXoytGp3lhK38R9xiOOnmu3KQClX/image001.png"><img alt="Image001" height="107" src="/media/getfile/files.posterous.com/sushispook/sDEtg7mSveXRET24fvaD15RxBs92zA7ZeI1nDmcVjroHr2Hr456mVsaAlqS1/image001.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p> <p></p> <p>You&#8217;ll only see the host file entry, and not the DHCP server. Even better? If you go to manage an authorized DHCP server, you can&#8217;t do that either: </p> <p></p> <p><div class='p_embed p_image_embed'>
+<a href="/media/getfile/files.posterous.com/sushispook/UkfQxj7h3rvKVpgzWtVzIkHXmsnXIRr4lFrksAyJZFAI3fpd7YBBKXGlYbmd/image002.png"><img alt="Image002" height="180" src="/media/getfile/files.posterous.com/sushispook/VzL4AqC5XoiSK2rLhYt6lzW03tWq942QygfgA6QAgtAab8Rk2yOpGqD70oar/image002.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p> <p><i><span style="font-size: 9.0pt;">(Yes, I have a server named Beef)</span></i></p> <p></p> <p>If you ever run across this, clean out your hosts file of any extraneous entries, and close and re-open your DHCP console. You won&#8217;t even have to restart the DHCP service. </p> <p></p> <p><div class='p_embed p_image_embed'>
+<img alt="Image003" height="197" src="/media/getfile/files.posterous.com/sushispook/3tLRTKvI0niTR4zRdqd4bjb1RmukNAnSSUWSIJAGowBNCJCh75HwsZStrQB6/image003.jpg" width="300" />
+</div>
+</p> 
